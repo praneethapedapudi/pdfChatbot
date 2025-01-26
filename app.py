@@ -91,22 +91,22 @@ if uploaded_file is not None:
                 st.write(f"**A:** {qna['answer']}")
 
         user_query = None
-        input_method = st.radio("How would you like to ask your question?", ("Type", "Speak"))
+        # input_method = st.radio("How would you like to ask your question?", ("Type", "Speak"))
 
-        if input_method == "Type":
-            user_query = st.text_input("Type your question based on the PDF content:")
+        # if input_method == "Type":
+        #     user_query = st.text_input("Type your question based on the PDF content:")
 
-        elif input_method == "Speak":
-            if st.button("Speak Question"):
-                user_query = speech_to_text()
+        # elif input_method == "Speak":
+        #     if st.button("Speak Question"):
+        #         user_query = speech_to_text()
 
         if user_query:
             raw_response = generate_answer_based_on_pdf(text, user_query)
             filtered_response = filter_pdf_content_from_response(raw_response, text)
             st.session_state.conversation.append({"question": user_query, "answer": filtered_response})
             st.write(filtered_response)
-            if st.button("Speak Answer"):
-                text_to_speech(filtered_response)
+            # if st.button("Speak Answer"):
+            #     text_to_speech(filtered_response)
                 
 else:
     st.sidebar.warning("Please upload a PDF file to begin.")
