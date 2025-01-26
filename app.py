@@ -41,34 +41,34 @@ def filter_pdf_content_from_response(response, pdf_text):
     return re.split(r'(?<=[.!?])\s+', response.replace(pdf_text, "").strip())[-1]
 
 # Function to convert text to speech
-'''def text_to_speech(text):
-    engine = pyttsx3.init()
-    engine.say(text)
-    engine.runAndWait()
+# def text_to_speech(text):
+#     engine = pyttsx3.init()
+#     engine.say(text)
+#     engine.runAndWait()
 
 
-# Function to convert speech to text
-def speech_to_text():
-    recognizer = sr.Recognizer()
-    microphone = sr.Microphone()
+# # Function to convert speech to text
+# def speech_to_text():
+#     recognizer = sr.Recognizer()
+#     microphone = sr.Microphone()
 
-    with microphone as source:
-        st.write("Listening... Please speak your question.")
-        recognizer.adjust_for_ambient_noise(source)
-        audio = recognizer.listen(source)
+#     with microphone as source:
+#         st.write("Listening... Please speak your question.")
+#         recognizer.adjust_for_ambient_noise(source)
+#         audio = recognizer.listen(source)
 
-    try:
-        st.write("Converting speech to text...")
-        query = recognizer.recognize_google(audio)
-        st.write(f"You asked: {query}")
-        return query
-    except sr.UnknownValueError:
-        st.error("Sorry, I could not understand the speech.")
-        return None
-    except sr.RequestError:
-        st.error("Sorry, there was an error with the speech recognition service.")
-        return None
-        '''
+#     try:
+#         st.write("Converting speech to text...")
+#         query = recognizer.recognize_google(audio)
+#         st.write(f"You asked: {query}")
+#         return query
+#     except sr.UnknownValueError:
+#         st.error("Sorry, I could not understand the speech.")
+#         return None
+#     except sr.RequestError:
+#         st.error("Sorry, there was an error with the speech recognition service.")
+#         return None
+
 
 # Streamlit UI setup
 st.title("PDF Chatbot")
