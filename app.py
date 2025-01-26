@@ -89,7 +89,7 @@ if uploaded_file is not None:
                 st.write(f"**A:** {qna['answer']}")
 
         user_query = None
-        input_method = st.radio("How would you like to ask your question?", ("Type", "Speak"))
+        # input_method = st.radio("How would you like to ask your question?", ("Type", "Speak"))
 
         # if input_method == "Type":
         user_query = st.text_input("Type your question based on the PDF content:")
