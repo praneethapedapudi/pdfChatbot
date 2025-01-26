@@ -94,7 +94,7 @@ if uploaded_file is not None:
         # input_method = st.radio("How would you like to ask your question?", ("Type", "Speak"))
 
         # if input_method == "Type":
-        #     user_query = st.text_input("Type your question based on the PDF content:")
+        user_query = st.text_input("Type your question based on the PDF content:")
 
         # elif input_method == "Speak":
         #     if st.button("Speak Question"):
