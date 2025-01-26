@@ -1,0 +1,10 @@
+langchain
+PyMuPDF
+PyPDF2
+streamlit
+pandas
+langchain_community
+huggingface_hub
+pyttsx3
+SpeechRecognition
+PyAudio
