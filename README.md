@@ -40,3 +40,4 @@ This demo does not contain speech-to-text and text-to-speech functions
 - `huggingface_hub`
 - `pyttsx3`
 - `SpeechRecognition`
+- `PyAudio`
