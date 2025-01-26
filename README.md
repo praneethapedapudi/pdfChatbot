@@ -18,16 +18,17 @@ A Streamlit app that allows users to upload a PDF and interact with its content 
 
 2. Install dependencies:
    ```bash
-   pip install -r requirements.txt
+   pip install -r requirements_local.txt
    ```
 
 3. Run the app:
    ```bash
-   streamlit run app.py
+   streamlit run app_local.py
    ```
 
 ## Demo
 [PDF Chatbot Demo](https://pdfchatbot-y9o8tm5jryzkjffv4fboqs.streamlit.app/)
+This demo does not contain speech-to-text and text-to-speech functions
 
 ## Requirements
 
