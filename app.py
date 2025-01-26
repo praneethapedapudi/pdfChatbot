@@ -41,10 +41,11 @@ def filter_pdf_content_from_response(response, pdf_text):
     return re.split(r'(?<=[.!?])\s+', response.replace(pdf_text, "").strip())[-1]
 
 # Function to convert text to speech
-def text_to_speech(text):
+'''def text_to_speech(text):
     engine = pyttsx3.init()
     engine.say(text)
     engine.runAndWait()
+
 
 # Function to convert speech to text
 def speech_to_text():
@@ -67,6 +68,7 @@ def speech_to_text():
     except sr.RequestError:
         st.error("Sorry, there was an error with the speech recognition service.")
         return None
+        '''
 
 # Streamlit UI setup
 st.title("PDF Chatbot")
